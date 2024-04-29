@@ -42,6 +42,7 @@ def update_figure(d):
 	add_image(fig, "shrinkinator_img/solarsystem.png", np.log10(12e12))
 	add_image(fig, "shrinkinator_img/milkyway.png", np.log10(9.5e20))
 	fig.update_layout_images(dict(xref="x", yref="y"))
+	fig.update_layout(dragmode="pan")
 
 	st.plotly_chart(fig, use_container_width=True)
 
